@@ -2,6 +2,10 @@
 
 A sophisticated music genre classification system powered by the MUSAIC (MUsic SAmple Identification Classifier) model, achieving 90% accuracy across 10 major music genres.
 
+## Try It Out
+
+[Link](https://web-production-6b48.up.railway.app/)
+
 ## About
 
 deepListen is an AI-powered music genre classification platform that leverages deep learning to accurately identify and categorize music into distinct genres. The system uses the proprietary MUSAIC model, which stands for "MUsic SAmple Identification Classifier," designed specifically for high-precision audio analysis.
