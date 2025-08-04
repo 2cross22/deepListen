@@ -29,6 +29,7 @@ dependencies = [
     "soundfile>=0.12.0",
     "flask>=2.3.0",
     "werkzeug>=2.3.0",
+    "gunicorn>=21.0.0",
 ]
 
 [project.optional-dependencies]
