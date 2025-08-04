@@ -135,12 +135,15 @@ def api_predict():
 def health():
     return jsonify({'status': 'healthy', 'model_loaded': classifier is not None})
 
+# Initialize the classifier globally
+try:
+    print("Loading MUSAIC model...")
+    classifier = MUSAICClassifier()
+    print("Model loaded successfully!")
+except Exception as e:
+    print(f"Failed to load model: {e}")
+    print("Make sure MUSAIC.h5 is in the current directory")
+    classifier = None
+
 if __name__ == '__main__':
-    try:
-        print("Loading MUSAIC model...")
-        classifier = MUSAICClassifier()
-        print("Model loaded successfully!")
-        app.run(debug=True, host='0.0.0.0', port=5000)
-    except Exception as e:
-        print(f"Failed to load model: {e}")
-        print("Make sure MUSAIC.h5 is in the current directory") 
+    app.run(debug=True, host='0.0.0.0', port=5000) 
