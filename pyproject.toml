@@ -3,10 +3,10 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "audio-genre-classifier"
+name = "deepListen"
 version = "0.1.0"
 description = "Music genre classification using audio features and deep learning"
-authors = [{name = "Audio Genre Classifier", email = "user@example.com"}]
+authors = [{name = "Audio Genre Classifier"]
 readme = "README.md"
 requires-python = ">=3.8,<3.13"
 classifiers = [
@@ -45,9 +45,9 @@ audio-genre-classifier = "audio_genre_classifier:main"
 predict-genre = "predict_genre:main"
 
 [project.urls]
-Homepage = "https://github.com/user/audio-genre-classifier"
-Repository = "https://github.com/user/audio-genre-classifier"
-Issues = "https://github.com/user/audio-genre-classifier/issues"
+Homepage = "http://github.com/2cross22/deepListen"
+Repository = "http://github.com/2cross22/deepListen"
+Issues = "http://github.com/2cross22/deepListen"
 
 [tool.setuptools.packages.find]
 where = ["."]
